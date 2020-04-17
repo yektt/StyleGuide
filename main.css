@@ -25,6 +25,44 @@ body {
   clear: both;
 }
 
+.masthead {
+  padding: 0;
+  margin: 0 0 4.8rem;
+}
+
+.masthead h1 {
+  margin-left: inherit;
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+
+.masthead ol {
+  padding: 0 1em;
+  color: #2c9cf2;
+  font-size: 1.5em;
+  font-style: normal;
+}
+
+main ol {
+  padding: 0 1em;
+  color: #192127;
+  font-size: 3em;
+  font-style: normal;
+}
+
+/* typography*/
+h1, .alpha {
+  font-size: 3.6em;
+  line-height: 1.2;
+  color: #192127;
+}
+
+h1, .alpha {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  font-weight: normal;
+}
+
 
 /* header */
 /* for not to use in the other part's content-wrappers */
@@ -36,7 +74,7 @@ body {
 }
 
 .global-header {
-  margin: 0 0 4.8rem 0;
+  margin: 0 0 9.6rem 0;
   border-bottom: 1px solid #afbac4;
 }
 
@@ -49,6 +87,14 @@ body {
 /* for center everything in the header*/
 .content-wrapper nav {
   margin-left: auto;
+}
+
+.masthead .content-wrapper {
+  margin: 0 auto;
+}
+
+main .content-wrapper {
+  margin: 0 auto;
 }
 
 /* navigation */
