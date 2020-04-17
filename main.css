@@ -51,6 +51,11 @@ main ol {
   font-size: 3em;
 }
 
+.global-footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 /* typography*/
 h1, .alpha {
   font-size: 3.6em;
@@ -64,6 +69,15 @@ h1, .alpha {
   font-weight: normal;
 }
 
+.global-footer .content-wrapper {
+  display: flex;
+}
+
+.global-footer p {
+  margin-left: auto;
+  font-size: 1.4em;
+  text-align: right;
+}
 
 /* header */
 /* for not to use in the other part's content-wrappers */
@@ -136,4 +150,12 @@ h1, .alpha {
 
 .global-footer .logo span {
   color: #fff;
+}
+
+/* footer */
+
+.global-footer {
+  background-color: #192127;
+  color: #bbc1c6;
+  padding: 4.8rem 0 4.8rem;
 }
