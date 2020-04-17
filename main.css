@@ -1,0 +1,96 @@
+/* base */
+html {
+  background-color: #fff;
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  color: #72797e;
+  margin: 0;
+  padding: 0;
+}
+
+/* helpers */
+.content-wrapper {
+  max-width: 96em;
+  margin: 0 0;
+  padding: 0 1em;
+}
+
+.content-wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+/* header */
+/* for not to use in the other part's content-wrappers */
+.global-header .content-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.global-header {
+  margin: 0 0 4.8rem 0;
+  border-bottom: 1px solid #afbac4;
+}
+
+.global-nav {
+  display: flex;
+  padding: 0;
+  float: right;
+}
+
+/* for center everything in the header*/
+.content-wrapper nav {
+  margin-left: auto;
+}
+
+/* navigation */
+
+.global-nav li {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 1.6em;
+}
+
+.global-nav li a {
+  text-decoration: none;
+  color: #192127;
+  font-size: 1.5em;
+}
+
+/* logo */
+.logo {
+  letter-spacing: 0.1rem;
+  word-spacing: -0.2rem;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.logo span {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #192127;
+  white-space: nowrap;
+}
+
+/* for deleting the underline og the link*/
+.logo a {
+  text-decoration: none;
+}
+
+/* for making 'em' in normal style and blue*/
+.logo em {
+  font-style: normal;
+  color: #2c9cf2;
+}
+
+.global-footer .logo span {
+  color: #fff;
+}
