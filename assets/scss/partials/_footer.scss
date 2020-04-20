@@ -1,0 +1,22 @@
+/* footer */
+
+.global-footer .content-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.global-footer p {
+  float: right;
+  margin-left: auto;
+  font-size: 1.4em;
+  padding-right: 1em;
+}
+
+.global-footer {
+  background-color: $black;
+  color: #bbc1c6;
+  padding: ($pulse * 3) 0 ($pulse * 3);
+}

@@ -1,0 +1,37 @@
+/* logo */
+.logo {
+  letter-spacing: 0.1rem;
+  word-spacing: -0.2rem;
+  white-space: nowrap;
+}
+
+.logo span {
+  font-size: $pulse;
+  font-weight: bold;
+  color: $black;
+  white-space: nowrap;
+}
+
+/* for deleting the underline og the link*/
+.logo a {
+  text-decoration: none;
+}
+
+/* for making 'em' in normal style and blue*/
+.logo em {
+  font-style: normal;
+  color: $blue;
+}
+
+.global-footer .logo span {
+  color: $white;
+}
+
+@include tablet {
+  .logo span {
+    font-size: 1.8em;
+  }
+  .logo {
+    padding-top: 1em;
+  }
+}

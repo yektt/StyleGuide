@@ -1,0 +1,46 @@
+/* list edit */
+
+ol {
+  padding: 0 1em;
+  font-style: normal;
+}
+
+.masthead ol {
+  color: $blue;
+  font-size: $pulse;
+}
+
+main ol {
+  color: $black;
+  font-size: 2.6em;
+  list-style: decimal-leading-zero;
+  margin-top: 0;
+  padding-left: 1.5em; /*for make them in the same vertical line*/
+}
+
+main ol li {
+  margin-bottom: 2em;
+}
+
+.global-footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+@include tablet {
+  .masthead ol {
+    font-size: 1.8em;
+  }
+  main ol {
+    font-size: 3em;
+  }
+}
+
+@include desktop {
+  .masthead ol {
+    font-size: 2.2em;
+  }
+  main ol {
+    font-size: 3.6em;
+  }
+}

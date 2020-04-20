@@ -1,0 +1,31 @@
+/* helpers */
+.content-wrapper {
+  max-width: 96em;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.content-wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.masthead {
+  padding: 0;
+  margin: 0;
+}
+
+.content-wrapper nav {
+  margin-left: auto;
+}
+
+/* screen - phone */
+@include phone {
+  .banner .content-wrapper nav {
+    margin-left: 0;
+  }
+  .global-nav li:first-child {
+    margin-left: 0;
+  }
+}

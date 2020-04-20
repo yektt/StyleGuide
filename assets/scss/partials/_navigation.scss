@@ -1,0 +1,23 @@
+/* navigation */
+
+.global-nav {
+  padding: 0;
+  float: right;
+}
+
+.global-nav > li {
+  list-style-type: none;
+  float: left;
+  padding: 0;
+  margin-left: $pulse;
+}
+
+.global-nav > li:last-child {
+  margin-right: 2em;
+}
+
+.global-nav li a {
+  text-decoration: none;
+  color: $black;
+  font-size: 1.5em;
+}
