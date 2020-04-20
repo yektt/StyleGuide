@@ -15,8 +15,8 @@ body {
 /* helpers */
 .content-wrapper {
   max-width: 96em;
-  margin: 0 0;
   padding: 0 1em;
+  margin: 0 auto;
 }
 
 .content-wrapper::after {
@@ -27,14 +27,31 @@ body {
 
 .masthead {
   padding: 0;
-  margin: 0 0 4.8rem;
+  margin: 0;
 }
 
 .masthead h1 {
   margin-left: inherit;
-  text-align: left;
   margin-bottom: 1.5em;
 }
+
+.content-wrapper nav {
+  margin-left: auto;
+}
+
+/* screen - phone */
+@media screen and (max-width: 480px){
+  .banner .content-wrapper nav {
+    margin-left: 0;
+  }
+  .global-nav li:first-child {
+    margin-left: 0;
+  }
+}
+
+
+
+/* list edit */
 
 ol {
   padding: 0 1em;
@@ -43,12 +60,19 @@ ol {
 
 .masthead ol {
   color: #2c9cf2;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 main ol {
   color: #192127;
-  font-size: 3em;
+  font-size: 3.5em;
+  list-style: decimal-leading-zero;
+  margin-top: 0;
+  padding-left: 1.5em; /*for make them in the same vertical line*/
+}
+
+main ol li {
+  margin-bottom: 2em;
 }
 
 .global-footer ul {
@@ -58,28 +82,18 @@ main ol {
 
 /* typography*/
 h1, .alpha {
-  font-size: 3.6em;
+  font-size: 4.8em;
   line-height: 1.2;
   color: #192127;
-}
-
-h1, .alpha {
   margin: 0 0 0.5em 0;
   padding: 0;
   font-weight: normal;
 }
 
-.global-footer .content-wrapper {
-  display: flex;
-}
 
-.global-footer p {
-  margin-left: auto;
-  font-size: 1.4em;
-  text-align: right;
-}
 
 /* header */
+
 /* for not to use in the other part's content-wrappers */
 .global-header .content-wrapper {
   display: flex;
@@ -93,27 +107,23 @@ h1, .alpha {
   border-bottom: 1px solid #afbac4;
 }
 
+
+/* navigation */
+
 .global-nav {
-  display: flex;
   padding: 0;
   float: right;
 }
 
-/* for center everything in the header*/
-.content-wrapper nav {
-  margin-left: auto;
-}
-
-.align {
-  margin: 0 auto;
-}
-
-/* navigation */
-
-.global-nav li {
+.global-nav > li {
   list-style-type: none;
+  float: left;
   padding: 0;
   margin-left: 1.6em;
+}
+
+.global-nav > li:last-child {
+  margin-right: 2em;
 }
 
 .global-nav li a {
@@ -127,7 +137,6 @@ h1, .alpha {
   letter-spacing: 0.1rem;
   word-spacing: -0.2rem;
   white-space: nowrap;
-  text-align: left;
 }
 
 .logo span {
@@ -153,6 +162,16 @@ h1, .alpha {
 }
 
 /* footer */
+
+.global-footer .content-wrapper {
+  display: flex;
+}
+
+.global-footer p {
+  float: right;
+  margin-left: auto;
+  font-size: 1.4em;
+}
 
 .global-footer {
   background-color: #192127;
