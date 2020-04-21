@@ -1,26 +1,29 @@
 /* typography*/
 h1 {
+  color: $black;
+
   font-size: 3.6em;
   line-height: 1.2;
-  color: $black;
   margin: 0 0 0.5em 0;
   padding: 0;
   font-weight: normal;
 }
 
+.masthead h1 {
+  margin-left: inherit;
+  margin-bottom: 1em;
+}
+
+// tablet screen size
 @include tablet {
   h1 {
     font-size: 4em;
   }
 }
 
+// desktop screen size
 @include desktop {
   h1 {
     font-size: 4.8em;
   }
-}
-
-.masthead h1 {
-  margin-left: inherit;
-  margin-bottom: 1em;
 }

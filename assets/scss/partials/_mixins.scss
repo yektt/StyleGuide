@@ -1,15 +1,18 @@
+// screen - phones
 @mixin phone {
   @media screen and (max-width: 480px) {
     @content;
   }
 }
 
+// screen - tablets
 @mixin tablet {
   @media screen and (min-width: 480px) {
     @content;
   }
 }
 
+// screen - desktops
 @mixin desktop {
   @media screen and (min-width: 800px) {
     @content;

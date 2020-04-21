@@ -1,30 +1,39 @@
 /* list edit */
 
+/*list-style: decimal-leading-zero; include
+list-style-position: outside. Because of that I didn't use
+list-style-position: inside in here. I had to use after
+decimal-leading-zero*/
 ol {
   padding: 0 1.5em;
   font-style: normal;
 }
 
+/*for first list of the page / blue list*/
 .masthead ol {
   color: $blue;
   font-size: $pulse;
+  list-style-position: inside;
+  padding-left: 0;
 }
 
 main ol {
   color: $black;
   font-size: 2.6em;
-  list-style: decimal-leading-zero;
+  list-style: decimal-leading-zero; /*for showing like 01, 02, 03, etc.*/
+  list-style-position: inside; /*make them align in the same vertical line*/
   margin-top: 0;
-  padding-left: 1.5em; /*for make them in the same vertical line*/
+  padding-left: 0; /*for make them in the same vertical line*/
 }
 
 main ol li {
   margin-bottom: 2em;
+  position: relative;
 }
 
 .global-footer ul {
   padding: 0;
-  list-style-type: none;
+  list-style-type: none; /*for removing bullets*/
 }
 
 @include tablet {
