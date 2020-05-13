@@ -1,0 +1,50 @@
+// colorPalette
+.colorPalette-style{
+  display: flex; 
+  float: left;
+  flex-flow: column;
+  margin-bottom: 1em;
+}
+
+.colorPalette {
+  margin-right: 1em;
+  width: 4em;
+  height: 2em;
+}
+
+.blue{
+  background-color: $blue;
+} 
+
+.black{
+  background-color: $black;
+}
+
+.white{
+  background-color: $white;
+  border: 1px solid #a8a8a8;
+}
+
+.red {
+  background-color: $red;
+}
+
+.gray-1 {
+  background-color: #72797e;
+}
+
+.gray-2 {
+  background-color: $gray-2;
+}
+
+.gray-3 {
+  background-color: $gray-3;
+}
+
+.gray-4 {
+  background-color: $gray-4;
+}
+
+.gray-5 {
+  background-color: $gray-5;
+}
