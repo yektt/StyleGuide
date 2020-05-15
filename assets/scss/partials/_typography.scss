@@ -1,5 +1,4 @@
 /* typography*/
-
 h1, h2, h3, h4, h5, h6,
 .alpha, .beta, .gamma, .delta, .epsilon, .zeta {
   margin: 0 0 0.5em 0;
@@ -13,21 +12,6 @@ h1,
  line-height: 1.2;
  color: $black;
 }
-
-// tablet screen size
-@include tablet {
-  h1 {
-    font-size: 4em;
-  }
-}
-
-// desktop screen size
-@include desktop {
-  h1 {
-    font-size: 4.8em;
-  }
-}
-
 
 h2,
 .beta {
@@ -65,10 +49,86 @@ h6,
  color: $gray-1;
 }
 
+/* I have describe in 'font-weight' for bold and 
+'font-style' for italic 
+when we want to use them together as 
+'bold italic', we will be able to use it together*/
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .masthead h1 {
   margin-left: inherit;
   margin-bottom: 1em;
 }
 
+/*<li>Typography
+            <div>
+              <div class="typography-glyph">
+                <h6>GLYPH</h6>
+                <h1>Aa</h1>
+              </div>
+              <div>
+                <div class="typography-weights">
+                  <h6>WEIGHTS</h6>
+                  <p>Regular</p>
+                  <p>Regular Italic<p>
+                  <p>Bold</p>
+                  <p>Bold Italic<p>
+                </div>
+              </div>
+            </div>
 
 
+          </li>*/
+.typography-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.typography-glyph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1em;
+}
+
+.typography-glyph h1 {
+  margin-bottom: 0;
+}
+
+.typography-weights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.typography-weights p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+// tablet screen size
+@include tablet {
+  h1 {
+    font-size: 4em;
+  }
+  .typography-weight p {
+    font-size: 0.65em;
+  }
+}
+
+// desktop screen size
+@include desktop {
+  h1 {
+    font-size: 4.8em;
+  }
+  .typography-weight p {
+    font-size: 0.9em;
+  }
+}
