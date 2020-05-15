@@ -1,4 +1,8 @@
 /* typography*/
+p, ul, ol, label {
+  font-size: 1.5rem;
+}
+
 h1, h2, h3, h4, h5, h6,
 .alpha, .beta, .gamma, .delta, .epsilon, .zeta {
   margin: 0 0 0.5em 0;
@@ -8,28 +12,28 @@ h1, h2, h3, h4, h5, h6,
 
 h1,
 .alpha {
- font-size: 3.6em;
+ font-size: 3.6rem;
  line-height: 1.2;
  color: $black;
 }
 
 h2,
 .beta {
- font-size: 3.6em;
+ font-size: 2.8rem;
  line-height: 1.2;
  color: $black;
 }
 
 h3,
 .gamma {
- font-size: 2.8em;
+ font-size: 2.4rem;
  line-height: 1.2;
  color: $black;
 }
 
 h4,
 .delta {
- font-size: 1.3em;
+ font-size: 1.3rem;
  line-height: 1.5;
  color: $gray-1;
  text-transform: uppercase;
@@ -37,14 +41,14 @@ h4,
 
 h5,
 .epsilon {
- font-size: 1.4em;
+ font-size: 1.4rem;
  line-height: 1.4;
  color: $gray-1;
 }
 
 h6,
 .zeta {
- font-size: 0.5em;
+ font-size: 1.2rem;
  line-height: 1.4;
  color: $gray-1;
 }
@@ -100,6 +104,7 @@ when we want to use them together as
 
 .typography-glyph h1 {
   margin-bottom: 0;
+  font-size: 5em;
 }
 
 .typography-weights {
@@ -113,22 +118,58 @@ when we want to use them together as
   font-size: 0.8em;
 }
 
+.typography-details {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.typography-details-line {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1em;
+  border-bottom: solid 1px $gray-1;
+  line-height: 1.6;
+}
+
+.first-child {
+  flex-basis: 45%;
+  margin: 0;
+}
+
+.other-childs {
+  flex-basis: 12%;
+  white-space: nowrap;
+  text-align: left;
+  margin: 2em 0;
+}
+
+
 // tablet screen size
 @include tablet {
   h1 {
-    font-size: 4em;
+    font-size: 4rem;
   }
-  .typography-weight p {
-    font-size: 0.65em;
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.8rem;
   }
 }
 
 // desktop screen size
 @include desktop {
   h1 {
-    font-size: 4.8em;
+    font-size: 4.8rem;
   }
-  .typography-weight p {
-    font-size: 0.9em;
+  h2 {
+    font-size: 3.6rem;
+  }
+  h3 {
+    font-size: 2.8rem;
   }
 }
