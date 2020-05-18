@@ -3,6 +3,10 @@ p, ul, ol, label {
   font-size: 1.5rem;
 }
 
+a {
+  font-size: 1.3rem;
+}
+
 h1, h2, h3, h4, h5, h6,
 .alpha, .beta, .gamma, .delta, .epsilon, .zeta {
   margin: 0 0 0.5em 0;
@@ -70,84 +74,6 @@ when we want to use them together as
   margin-bottom: 1em;
 }
 
-/*<li>Typography
-            <div>
-              <div class="typography-glyph">
-                <h6>GLYPH</h6>
-                <h1>Aa</h1>
-              </div>
-              <div>
-                <div class="typography-weights">
-                  <h6>WEIGHTS</h6>
-                  <p>Regular</p>
-                  <p>Regular Italic<p>
-                  <p>Bold</p>
-                  <p>Bold Italic<p>
-                </div>
-              </div>
-            </div>
-
-
-          </li>*/
-.typography-content {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1em;
-}
-
-.typography-glyph {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 1em;
-}
-
-.typography-glyph h1 {
-  margin-bottom: 0;
-  font-size: 5em;
-}
-
-.typography-weights {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.typography-weights p {
-  margin: 0;
-  font-size: 0.8em;
-}
-
-.typography-details {
-  margin-top: 1em;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-}
-
-.typography-details-line {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 1em;
-  border-bottom: solid 1px $gray-1;
-  line-height: 1.6;
-}
-
-.first-child {
-  flex-basis: 45%;
-  margin: 0;
-}
-
-.other-childs {
-  flex-basis: 12%;
-  white-space: nowrap;
-  text-align: left;
-  margin: 2em 0;
-}
-
-
 // tablet screen size
 @include tablet {
   h1 {
@@ -158,6 +84,9 @@ when we want to use them together as
   }
   h3 {
     font-size: 2.8rem;
+  }
+  a{
+    font-size: 1.4rem;
   }
 }
 
@@ -171,5 +100,8 @@ when we want to use them together as
   }
   h3 {
     font-size: 2.8rem;
+  }
+  a{
+    font-size: 1.6rem;
   }
 }

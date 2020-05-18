@@ -1,0 +1,37 @@
+/* Icons */
+
+.icon {
+  fill: $gray-1;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  .btn:hover &,
+  .btn:active &,
+  .btn:focus & {
+    fill: currentColor;
+  }
+}
+
+.icon--filled {
+  fill: $blue;
+}
+
+.icon--warning {
+  fill: $gray-1;
+
+  &:hover,
+  &:focus,
+  &:active{
+    fill: $red;
+  }
+}
+
+.icon--higlighted {
+  fill: $gray-1;
+
+  &:hover,
+  &:focus,
+  &:active{
+    fill: $blue;
+  }
+}

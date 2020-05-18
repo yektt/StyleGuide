@@ -23,8 +23,7 @@ main ol {
   font-size: 2.6em;
   list-style: decimal-leading-zero; /*for showing like 01, 02, 03, etc.*/
   list-style-position: inside; /*make them align in the same vertical line*/
-  margin-top: 0;
-  padding-left: 0; /*for make them in the same vertical line*/
+  padding: 0; /*for make them in the same vertical line*/
   flex-flow: column;
 }
 

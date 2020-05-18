@@ -1,0 +1,109 @@
+//
+
+// for Typography
+
+.typography-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.typography-glyph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    margin-right: 1em;
+}
+
+.typography-glyph h1 {
+  margin-bottom: 0;
+  font-size: 5em;
+}
+
+.typography-weights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.typography-weights p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.typography-details {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.typography-details-line {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1em;
+  border-bottom: solid 1px $gray-1;
+  line-height: 1.6;
+}
+
+.first-child {
+  flex-basis: 45%;
+  margin: 0;
+}
+
+.other-childs {
+  flex-basis: 12%;
+  white-space: nowrap;
+  text-align: left;
+  margin: 2em 0;
+}
+
+// for Buttons
+.buttons-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.buttons-default{
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons-content h4 {
+  margin-top: 1em;
+}
+
+// for Icons
+.icons-content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.icons-display{
+  display: flex;
+  align-items: center;
+} 
+
+.icons-shown svg{
+  margin: 0 1em;
+}
+
+// for Form Elements
+.formElement-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.formElement-display {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+  // item display ile toplayabilir misin hepsini bir bak
+  // iyilestirmeler yap
+  // color plaette i de dierlerine uydur
