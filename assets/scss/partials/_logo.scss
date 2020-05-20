@@ -9,7 +9,6 @@
   font-size: $pulse;
   font-weight: bold;
   color: $black;
-  white-space: nowrap;
 }
 
 /* for deleting the underline of the link*/
@@ -26,13 +25,4 @@
 
 .global-footer .logo span {
   color: $white;
-}
-
-@include tablet {
-  .logo span {
-    font-size: 1.8em;
-  }
-  .logo {
-    padding-top: 1em;
-  }
 }

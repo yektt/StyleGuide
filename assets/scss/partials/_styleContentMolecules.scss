@@ -1,0 +1,67 @@
+//
+
+//for Form Elements display
+.form-display{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item{
+  display: flex;
+  align-items: center;
+}
+
+.form-borderLine {
+  border-bottom: solid 1px $gray-1;
+}
+
+.form-display .other-child {
+  margin: 1em 0; 
+} 
+
+// About follower
+.follower-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px solid $gray-4;
+}
+
+.follower-image {
+  margin-right: 0.5em;
+  text-align: center;
+}
+
+.follower-image img {
+  border-radius: 5em;
+  text-align: center;
+  margin-top: 0.8em;
+}
+
+.follower-information {
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.follower-information a {
+  text-decoration: none;
+}
+
+.follower-information p {
+  margin: 0;
+}
+
+// for navigation display
+.navigation-display .global-nav {
+  float: left;
+}
+
+.navigation-display .global-nav li {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+

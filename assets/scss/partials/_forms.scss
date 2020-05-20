@@ -1,0 +1,62 @@
+/* ===================
+  FORMS
+ =================== */
+
+.input {
+  font-size: 1.5rem;
+  color: $gray-1;
+}
+  
+.input__label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0 .5em;
+}
+  
+.input__field {
+  background-color: $white;
+  border: 1px solid $gray-4;
+  padding: $pulse;
+  font-size: inherit;
+  margin: 0;
+  &:focus {
+    border-color: #72787e;
+  }
+}
+
+.input__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  & .btn {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    border-left-width: 0;
+}
+  
+  & .input__field {
+     -webkit-box-flex: 1;
+     -webkit-flex: 1 0 10em;
+        -moz-box-flex: 1;
+        -ms-flex: 1 0 10em;
+              flex: 1 0 10em;
+  }
+}
+  
+  
+.input--cta .input__field {
+  border-color: $blue;
+}
+
+.search {
+  float: left;
+  margin-top: 0.5em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+     -moz-box-flex: 1;
+     -ms-flex: 1 0 auto;
+     flex: 1 0 auto;
+  }
