@@ -38,6 +38,9 @@
   border-radius: 5em;
   text-align: center;
   margin-top: 0.8em;
+
+  width: 50px;
+  height: 51px;
 }
 
 .follower-information {
@@ -58,10 +61,11 @@
 // for navigation display
 .navigation-display .global-nav {
   float: left;
+  display: flex;
+  white-space: nowrap;
 }
 
 .navigation-display .global-nav li {
   margin-left: 0;
   margin-right: 0.5em;
 }
-

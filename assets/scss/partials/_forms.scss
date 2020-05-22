@@ -1,18 +1,96 @@
-/* ===================
-  FORMS
- =================== */
+/* FORMS */
+
+// for search
+
+.search {
+  display: flex;
+  flex-direction: row;
+} 
+
+.search-block {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 10em;
+  margin-left: 1em;
+}
+
+.search-input {
+  flex: 1 0 10em;
+  padding: 1em;
+  font-size: 1.6rem;
+  border-right-width: 0;
+  border: 1px solid $gray-4;
+  box-shadow: 2px 2px $gray-5;
+  border-color: $blue;
+}
+
+search-label{
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0 .5em;
+}
+
+.search-block .btn {
+  border-left-width: 0;
+}
 
 .input {
   font-size: 1.5rem;
   color: $gray-1;
+  border-color: 1px solid $gray-1;
+  flex: 1 0 10em;
+  padding: 0.5em;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.15);
 }
-  
+
+.text-input {
+  flex: 1 0 10em;
+  padding: 0.5em;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+form .btn {
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.wide-button{
+  text-transform: uppercase;
+  justify-content: center;
+  flex: 1 0 10em;
+}
+
+form a {
+  text-decoration: none;
+  color: $blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// burayi hocadan aldim, lazim olursa diye duruyor
+// search icin
 .input__label {
   display: inline-block;
   cursor: pointer;
   margin: 0 0 .5em;
 }
-  
+
 .input__field {
   background-color: $white;
   border: 1px solid $gray-4;
@@ -23,6 +101,8 @@
     border-color: #72787e;
   }
 }
+
+
 
 .input__row {
   display: -webkit-box;
@@ -35,28 +115,18 @@
        -moz-border-radius: 0;
             border-radius: 0;
     border-left-width: 0;
-}
-  
+  }
+
   & .input__field {
-     -webkit-box-flex: 1;
-     -webkit-flex: 1 0 10em;
-        -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 10em;
+       -moz-box-flex: 1;
         -ms-flex: 1 0 10em;
-              flex: 1 0 10em;
+            flex: 1 0 10em;
   }
 }
-  
-  
+
+
 .input--cta .input__field {
   border-color: $blue;
 }
-
-.search {
-  float: left;
-  margin-top: 0.5em;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-     -moz-box-flex: 1;
-     -ms-flex: 1 0 auto;
-     flex: 1 0 auto;
-  }

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Bucket List - Organism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if !IE]><!-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--<![endif]-->
+    <!--[if IE]>
+      <link rel="stylesheet" type="text/css" href="assets/css/universal-ie9.css" />
+    <![endif]-->
+    <script src="assets/js/modernizr-custom.js"></script>
+  </head>
+  <body>
+    <header class="banner">
+      <div class="global-header">
+        <div class="content-wrapper">
+          <div class="logo">
+            <a href="atoms.html"><span><em>My</em> Bucket List - Style Guide</span></a>
+          </div>
+          <nav>
+            <ul class="global-nav">
+              <li><a href="atoms.html">Atoms</a></li>
+              <li><a href="molecules.html">Molecules</a></li>
+              <li><a href="organisms.html">Organisms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="masthead">
+        <div class="content-wrapper">
+          <h1>Organism</h1>
+          <ol>
+            <li>Complete Form</li>
+            <li>Header</li>
+            <li>Follower List</li>
+          </ol>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <ol>
+          <li>Complete Form
+            <h3></br>Log in form</h3>
+            <form class="form-display" action="log-in" method="post">
+              <div class="alert">
+                Please check your password</br>
+                Please check your mail 
+              </div>
+              <div class="form-display">
+                <div class="form-item">
+                  <label class="first-child" for="mail">Email</label>
+                  <input class="other-child input" type="email" id="mail" name="mail" placeholder="e.g. diana.prince@wonder.wmn" />
+                </div>
+                <div class="form-item">
+                  <label class="first-child" for="password">Password</label>
+                  <input class="other-child input" type="password" id="password" name="password" />
+                </div>
+                <div class="form-item">
+                    <div class="display-in-row space-between">
+                      <div class="display-in-row second-column">
+                        <input  type="checkbox" id="remember-me" />
+                        <label class="other-childs" for="remember-me">Remember me</label>
+                      </div>
+                      <a class="flex-end" href="#nolink">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="form-item">
+                  <label class="first-child"></label>
+                  <button class="btn btn--cta other-child wide-button">Log in</button>
+                </div>
+              </div>
+            </form>
+            </br>
+            <div>
+              <h3>Create Goal form</h3>
+              <form class="form-display" action="create-goal" method="post">
+                <div class="alert">
+                  Please fill out a title</br>
+                  Please add an image
+                </div>
+                <div class="display-in-row">
+                  <label class="first-child">Title</label>
+                  <input class="other-childs input" type="text" id="goal-name" placeholder="E.g. Ride a camel"/>
+                </div>
+
+                <div class="display-in-row">
+                  <label class="first-child">Add an image</label>
+                  <label class="input-file other-child">
+                    <input type="file" id="goal-image"/>
+                  </label>  
+                </div>
+
+                <div class="display-in-row">
+                  <label class="first-child">Add tags</label>
+                  <input class="other-childs input" type="text" id="goal-tags" placeholder="separate multiple tags with commas"/>
+                </div>
+
+                <div class="display-in-row">
+                  <label class="first-child">Description</label>
+                  <textarea class="other-childs input" id="goal-decription" placeholder="Optional. 500 characters max."></textarea>
+                </div>
+
+                <div class="display-in-row">
+                  <a class="first-child" href="#nolink">Cancel</a>
+                  <button class="btn btn--cta other-childs wide-button" type="submit">Create Goal</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li>Header
+
+            <div class="global-header">
+              <div class="content-wrapper">
+                <div class="logo">
+                  <a href="atoms.html"><span><em>My</em> Bucket List - Style Guide</span></a>
+                </div>
+                <form class="search input" action="ideas" method="get">
+                  <label class="search-label sr-only" for="search-label">Search</label>
+                  <div class="search-block">
+                    <input class="search-input" id="search-input" name="search" type="text" placeholder="e.g. Swimming with dolphins" />
+                    <button class="btn btn--cta" type="submit">Search</button>
+                  </div>
+                </form>
+                <nav>
+                  <ul class="global-nav">
+                    <li><a href="atoms.html">Atoms</a></li>
+                    <li><a href="molecules.html">Molecules</a></li>
+                    <li><a href="organisms.html">Organisms</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </li>
+          <li>Follower List
+            <div class="follower-line">
+              <div class="follower-image">
+                <a href="#profile1">
+                  <img src="assets/images/profile1.png" alt="Avatar illustiration"/>
+                </a>
+              </div>
+              <div class="follower-information">
+                <div>
+                  <a href="#profile1"><p>Tom Jenkinson</p></a>
+                  <a href="#goals-profile1"><h5>3 Goals</h5></a>
+                </div>
+              </div>
+              <div class="follow-button">
+                <button class="btn">following</button>
+              </div>
+            </div>
+
+            <div class="follower-line">
+              <div class="follower-image">
+                <a href="#profile2">
+                  <img src="assets/images/avatar.png" alt="Avatar illustiration"/>
+                </a>
+              </div>
+              <div class="follower-information">
+                <div>
+                  <a href="#profile2"><p>Caroline Moeller</p></a>
+                  <a href="#goals-profile2"><h5>No Goals</h5></a>
+                </div>
+              </div>
+              <div class="follow-button">
+                <button class="btn">follow</button>
+              </div>
+            </div>
+
+            <div class="follower-line">
+              <div class="follower-image">
+                <a href="#profile3">
+                  <img src="assets/images/profile3.jpg" alt="Avatar illustiration"/>
+                </a>
+              </div>
+              <div class="follower-information">
+                <div>
+                  <a href="#profile3"><p>Sarah Richards</p></a>
+                  <a href="#goals-profile3"><h5>18 Goals</h5></a>
+                </div>
+              </div>
+              <div class="follow-button">
+                <button class="btn btn--warning">unfollow</button>
+              </div>
+            </div>
+
+            <div class="follower-line">
+              <div class="follower-image">
+                <a href="#profile4">
+                  <img src="assets/images/avatar.png" alt="Avatar illustiration"/>
+                </a>
+              </div>
+              <div class="follower-information">
+                <div>
+                  <a href="#profile4"><p>Bradley Jenkins</p></a>
+                  <a href="#goals-profile4"><h5>2 Goals</h5></a>
+                </div>
+              </div>
+              <div class="follow-button">
+                <button class="btn">follow</button>
+              </div>
+            </div>
+
+            <div class="follower-line">
+              <div class="follower-image">
+                <a href="#profile5">
+                  <img src="assets/images/profile5.jpg" alt="Avatar illustiration"/>
+                </a>
+              </div>
+              <div class="follower-information">
+                <div>
+                  <a href="#profile5"><p>Anna O'Connor</p></a>
+                  <a href="#goals-profile5"><h5>7 Goals</h5></a>
+                </div>
+              </div>
+              <div class="follow-button">
+                <button class="btn">follow</button>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </main>
+    <footer class="global-footer">
+      <div class="content-wrapper">
+        <ul>
+          <li class="logo">
+            <a href="atoms.html"><span><em>My</em> Bucket List</span></a>
+          </li>
+        </ul>
+        <p>&copy EPFL 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

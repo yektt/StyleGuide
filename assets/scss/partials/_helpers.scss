@@ -16,10 +16,6 @@
   margin: 0;
 }
 
-.content-wrapper nav {
-  margin-left: auto;
-}
-
 .list-name {
   margin: 1em 0;
 }
@@ -38,9 +34,6 @@
 
 /* screen - phone */
 @include phone {
-  .banner .content-wrapper nav {
-    margin-left: 0;
-  }
   .global-nav li:first-child {
     margin-left: 0;
   }

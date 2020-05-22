@@ -1,0 +1,90 @@
+// for complete forms
+
+.alert {
+  display: none;
+  color: $red;
+}
+
+.display-in-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.display-in-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-column {
+  position: relative;
+  left: 45%;
+}
+
+.space-between {
+  flex: 1 0 10em;
+  justify-content: space-between;
+}
+
+.page-wide{
+  flex: 1 0 10em;
+  box-shadow: 2px 2px $gray-5;
+  box-sizing: 1px;
+} 
+
+
+.input-file input[type="file"] {
+  display: none;
+}
+
+.input-file {
+  display: flex;
+  flex: 1 0 10em;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+}
+
+form textarea {
+  resize: none;
+  height: 8em;
+}
+
+.input-file input[type="file"] {
+  display: none;
+}
+
+.input-file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.input-file::before {
+  content:'CHOOSE FILE';
+
+  display: flex;
+  justify-content: center;
+  flex: 1 0 10em;
+
+  font-size: 1.3rem;
+  padding: $pulse;
+
+  border: 1px solid $gray-4;
+  border-radius: 3px;
+
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;  
+}
+
+.flex-end{
+  justify-content: flex-end;
+}
+
+li .global-header {
+  margin-bottom: 0;
+}

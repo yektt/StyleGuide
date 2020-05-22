@@ -3,6 +3,8 @@
   letter-spacing: 0.1rem;
   word-spacing: -0.2rem;
   white-space: nowrap;
+
+  flex: 1 0 10em;
 }
 
 .logo span {
@@ -15,6 +17,7 @@
 .logo a {
   text-decoration: none;
   font-size: inherit;
+  display: flex;
 }
 
 /* for making 'em' in normal style and blue*/
@@ -26,3 +29,17 @@
 .global-footer .logo span {
   color: $white;
 }
+
+main ol .logo {
+  flex: none;
+}
+
+main ol .input {
+  box-shadow: none;
+  padding: 0;
+}
+
+main ol .content-wrapper {
+  padding: 0;
+}
+

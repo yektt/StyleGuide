@@ -66,15 +66,15 @@
             <div class="form-display">
               <div class="form-borderLine form-item">
                 <label class="first-child" for="full-name">Full name</label>
-                <input class="other-child" type="text" id="full-name" name="full-name" placeholder="e.g. Diana Prince" />
+                <input class="other-child input" type="text" id="full-name" name="full-name" placeholder="e.g. Diana Prince" />
               </div>
               <div class="form-borderLine form-item">
                 <label class="first-child" for="email">Email address</label>
-                <input class="other-child" type="email" id="email" name="email" placeholder="e.g. diana.prince@wonder.wmn" />
+                <input class="other-child input" type="email" id="email" name="email" placeholder="e.g. diana.prince@wonder.wmn" />
               </div>
               <div class="form-borderLine form-item">
                 <label class="first-child" for="password">Choose a password</label>
-                <input class="other-child" type="password" id="password" name="password" />
+                <input class="other-child input" type="password" id="password" name="password" />
               </div>
             </div>
           </li>
@@ -121,13 +121,12 @@
                 <button class="btn">follow</button>
               </div>
             </div>
-
           </li>
           <li>Search form in the header
-            <form class="search input input--cta" action="ideas" method="get">
-              <label class="input__label sr-only" for="global-search-input">Search</label>
-              <div class="input__row">
-                <input class="input__field" id="global-search-input" name="search" type="text" placeholder="e.g. Swimming with dolphins" />
+            <form class="search" action="ideas" method="get">
+              <label class="search-label sr-only" for="search-label">Search</label>
+              <div class="search-block">
+                <input class="search-input" id="search-input" name="search" type="text" placeholder="e.g. Swimming with dolphins" />
                 <button class="btn btn--cta" type="submit">Search</button>
               </div>
             </form>
@@ -156,5 +155,3 @@
     </footer>
   </body>
 </html>
-
-
