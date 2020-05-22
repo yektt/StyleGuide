@@ -25,3 +25,9 @@
     color: $blue;
   }
 }
+
+@include tablet{
+  .global-nav li:first-child {
+    margin-left: 0;
+  }
+}

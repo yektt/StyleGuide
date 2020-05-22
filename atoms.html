@@ -350,32 +350,34 @@
           <li>Form elements
             <div class="formElement-content">
                 <h4>input elements</h4>
-                <div class="formElement-display">
+                <div class="display-in-row checkbox">
                   <label class="first-child">Checkbox</label>
                   <input type="checkbox"/>
                 </div>
-                <div class="formElement-display">
+                <div class="display-in-row">
                   <label class="first-child" for="text_input">Text input</label>
-                  <input type="text" id="text_input" name="text_input" placeholder="text input here"/>
+                  <input class="input text-input" type="text" id="text_input" name="text_input" placeholder="text input here"/>
                 </div>
-                <div class="formElement-display">
+                <div class="display-in-row">
                   <label class="first-child">File input</label>
-                  <input type="file"/>
+                  <label class="input-file other-childs">
+                    <input type="file" id="goal-image"/>
+                  </label>  
                 </div>
-                <div class="formElement-display">
+                <div class="display-in-row">
                   <label class="first-child" for="pwd">Password input</label>
-                  <input type="password" id="pwd" name="pwd" />
+                  <input class="input" type="password" id="pwd" name="pwd" />
                 </div>
-                <div class="formElement-display">
+                <div class="display-in-row">
                   <label class="first-child" for="mail">Mail input</label>
-                  <input type="email" id="mail" name="mail" placeholder="mail@mail.com" />
+                  <input class="input" type="email" id="mail" name="mail" placeholder="mail@mail.com" />
                 </div>
             </div>
             <div class="formElement-content">
               <h4>textarea</h4>
-              <div class="formElement-display">
+              <div class="display-in-row">
                 <label class="first-child" for="textarea-display">Textarea</label>
-                <textarea id="textarea-display"></textarea>
+                <textarea class="other-childs input" id="textarea-display" placeholder="textarea"></textarea>
               </div>
             </div>
             <div class="formElement-content">

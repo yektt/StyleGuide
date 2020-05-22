@@ -89,6 +89,18 @@
   }
 }
 
-.btn--completed .icon {
-  fill: $white;
+.search-block .btn {
+  border-left-width: 0;
+  border-radius: 0;
+}
+
+form .btn {
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.wide-button{
+  text-transform: uppercase;
+  justify-content: center;
+  flex: 1 0 10em;
 }

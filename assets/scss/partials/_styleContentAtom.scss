@@ -1,5 +1,3 @@
-//
-
 // for Typography
 
 .typography-content {
@@ -12,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 .typography-glyph h1 {
@@ -99,11 +97,17 @@
   margin-top: 1em;
 }
 
-.formElement-display {
+.display-in-row {
   display: flex;
   flex-direction: row;
   margin-top: 0.5em;
 }
-  // item display ile toplayabilir misin hepsini bir bak
-  // iyilestirmeler yap
-  // color plaette i de dierlerine uydur
+
+@include phone{
+  .other-childs{
+    flex-basis: 100%;
+  }
+  .typography-details-line{
+    margin: 0;
+  }
+}
