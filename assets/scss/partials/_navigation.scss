@@ -1,7 +1,9 @@
 /* navigation */
 .global-nav {
+  display: flex;
   padding: 0;
   float: right;
+  align-items: center;
 }
 
 .global-nav > li {
@@ -15,6 +17,14 @@
   margin-right: 2em;
 }
 
+main .global-nav li:last-child img {
+  display: initial;
+}
+
+main .global-nav li:last-child a {
+  color: transparent; 
+}
+
 .global-nav li a {
   text-decoration: none;
   color: $black;
@@ -26,8 +36,19 @@
   }
 }
 
+
+
 @include tablet{
   .global-nav li:first-child {
     margin-left: 0;
+  }
+}
+
+@include phone {
+  main .global-nav li:last-child img {
+    display: none;
+  }
+  main .global-nav li:last-child a {
+    color: $gray-1;
   }
 }

@@ -16,6 +16,7 @@
 
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 
   cursor: pointer;
   display: -webkit-box;
@@ -99,8 +100,19 @@ form .btn {
   justify-content: center;
 }
 
+.btn-shape {
+  height: 4em;
+  width: 8em;
+}
+
 .wide-button{
   text-transform: uppercase;
   justify-content: center;
   flex: 1 0 10em;
+}
+
+@include phone {
+  .in-one-row .wide-button {
+    flex-basis: 75%;
+  }
 }

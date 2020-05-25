@@ -29,9 +29,14 @@
   border-bottom: 1px solid $gray-4;
 }
 
+.follower-line p {
+  color: $blue;
+}
+
 .follower-image {
   margin-right: 0.5em;
   text-align: center;
+  flex-basis: 10%;
 }
 
 .follower-image img {
@@ -41,6 +46,17 @@
 
   width: 50px;
   height: 51px;
+}
+
+.follow-button{
+  flex-basis: 25%;
+}
+
+.follow-button .btn {
+  float: right;
+  width: 8em;
+  height: 4em;
+  justify-content: center;
 }
 
 .follower-information {
@@ -68,5 +84,14 @@
 .navigation-display .global-nav li {
   margin-left: 0;
   margin-right: 0.5em;
+}
+
+.navigation-display .global-nav li:last-child a {
+  color: $gray-1;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blue;
+  }
 }
 
